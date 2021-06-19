@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
                     Описание:
-                    <textarea th:field="*{about}"></textarea>
+                    <textarea th:field="*{about}" rows="6" cols="50"></textarea>
                 </div>
                 <div class="btn btn-primary mb-2">
                     <button type="submit" class="btn btn-primary submit">Сохранить</button>
@@ -57,30 +57,23 @@
 <footer th:replace="inc/footer.inc::footer"></footer>
 
 <!-- Bootstrap core JavaScript -->
-<div th:replace="inc/js.inc::js"></div>
-<script src="/static/default/js/tinymce/tinymce.min.js"></script>
-<script>
-    tinymce.init({
-        selector:'textarea',
-        plugins: "image",
-        menubar: "insert",
-        height: 500,
-        menubar: false,
-        plugins: [
-            'advlist autolink lists link image charmap print preview anchor textcolor',
-            'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | image | help'
-
-/*
-  automatic_uploads: true,
-  images_upload_url: 'postAcceptor.php',
-  images_reuse_filename: true,
-  images_upload_base_path: '/some/basepath'
-*/
-    });
-</script>
+<!--<div th:replace="inc/js.inc::js"></div>-->
+<!--<script src="/static/default/js/tinymce/tinymce.min.js"></script>-->
+<!--<script>-->
+<!--    tinymce.init({-->
+<!--        selector:'textarea',-->
+<!--        plugins: "image",-->
+<!--        menubar: "insert",-->
+<!--        height: 500,-->
+<!--        menubar: false,-->
+<!--        plugins: [-->
+<!--            'advlist autolink lists link image charmap print preview anchor textcolor',-->
+<!--            'searchreplace visualblocks code fullscreen',-->
+<!--            'insertdatetime media table paste code help wordcount'-->
+<!--        ],-->
+<!--        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | image | help'-->
+<!--    });-->
+<!--</script>-->
 
 </body>
 
