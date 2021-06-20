@@ -15,4 +15,4 @@
 
 Для сборки и развертывания необходимо последовательно выполнить команды:
 - docker-compose build
-- docker-compose upф
+- docker-compose run
