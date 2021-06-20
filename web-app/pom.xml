@@ -23,6 +23,7 @@
         <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
 </project>
