@@ -16,3 +16,8 @@
 Для сборки и развертывания необходимо последовательно выполнить команды:
 - docker-compose build
 - docker-compose run
+
+
+Swagger:
+- http://localhost:8080/v2/api-docs
+- http://localhost:8080/swagger-ui/

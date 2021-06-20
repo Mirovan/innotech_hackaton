@@ -1,5 +1,6 @@
 package ru.bigint.webapp.controller.api;
 
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,8 +17,9 @@ public class ScoreController {
 
     private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
+    @ApiOperation(value = "Update score", notes = "update user score")
     @PutMapping("/update/{userId}/game/{gameId}/score/{score}")
-    public void updateScore(@PathVariable Integer userId, @PathVariable Integer gameI, @PathVariable Integer score) {
+    public void updateScore(@PathVariable Integer userId, @PathVariable Integer gameId, @PathVariable Integer score) {
         //ToDo: реализовать обновление счета человека для конкретной игры
     }
 
